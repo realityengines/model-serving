@@ -48,10 +48,12 @@ The response consits of the best `num` terms together with their respective dist
 model output.
 
 ```
-[
-   {"term": "Picture", "score": 0.2541214},
-   ...
-]
+{
+  "result": [
+     {"term": "Picture", "score": 0.2541214},
+     ...
+  ]
+}
 ```
 
 A full example of exporting the artefacts for this model type is in [word2vec.ipynb](https://github.com/realityengines/model-serving/blob/master/word2vec.ipynb).
