@@ -5,9 +5,10 @@ hosting your custom models using Abacus.AI model serving infrastructure. Once
 the artefacts are prepared as described they can be uploaded in the web application.
 After the model is verified it can be deployed to serve predictions.
 
-The uploads consists of two main parts:
-1. Model artefact files
-2. Verification data
+The uploads consists of three parts:
+1. Model artifact file
+2. Embedding dataset file
+3. Verification data
 
 The artefacts specify the model, for example a tensorflow saved model. The verification
 data is a list of JSON records each describing a prediction request and an expected
