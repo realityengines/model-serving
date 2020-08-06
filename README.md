@@ -1,8 +1,8 @@
 # Abacus.AI Model Serving
 
-This repo contains documentation and code describing how to produce artefacts for
+This repo contains documentation and code describing how to produce artifacts for
 hosting your custom models using Abacus.AI model serving infrastructure. Once
-the artefacts are prepared as described they can be uploaded in the web application.
+the artifacts are prepared as described they can be uploaded in the web application.
 After the model is verified it can be deployed to serve predictions.
 
 The uploads consists of three parts:
@@ -10,13 +10,13 @@ The uploads consists of three parts:
 2. Embedding dataset file
 3. Verification data
 
-The artefacts specify the model, for example a tensorflow saved model. The verification
+The artifacts specify the model, for example a tensorflow saved model. The verification
 data is a list of JSON records each describing a prediction request and an expected
-response. The expected response should be build by running the model locally. This
+response. The expected response should be built by running the model locally. This
 data is used by the service to verify that it is able to correctly load and evaluate
 the model.
 
-Different model types required different artefacts and verification files. There is a
+Different model types required different artifacts and verification files. There is a
 notebook for each model type in this repo to illustrate how to produce the required files.
 
 ### Embedding Ranking Model
@@ -57,4 +57,4 @@ model output.
 }
 ```
 
-A full example of exporting the artefacts for this model type is in [word2vec.ipynb](https://github.com/realityengines/model-serving/blob/master/word2vec.ipynb).
+A full example of exporting the artifacts for this model type is in [word2vec.ipynb](https://github.com/realityengines/model-serving/blob/master/word2vec.ipynb).
